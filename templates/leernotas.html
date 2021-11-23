@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block titulo %} Pagina para leer las notas {% endblock %}
+
+{% block contenido %}
+  <h1>Listado de Notas</h1>
+  <table class="tabla-notas">
+    {% for nota in consulta %}
+      <tr>
+        <td class="text-td">{{nota.tituloNota}}</td>
+        <td class="text-td">{{nota.cuerpoNota}}</td>
+        <td class="link-td"><a href="/eliminarnota/{{nota.idNota}}" class="e-link">Eliminar</a></td>
+        <td class="link-td"><a href="/editarnota/{{nota.idNota}}" class="e-link">Editar</a></td>
+      </tr>
+    {% endfor %}
+  </table>
+  
+{% endblock %}

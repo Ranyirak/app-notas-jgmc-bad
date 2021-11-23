@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block titulo %} Pagina principal {% endblock %}
+
+{% block contenido %}
+  <h1>Never forget what you need to do</h1>
+  <h3>Create your to-do list with this amazing note maker!</h3>
+
+  <form action="/crearnota" method="post">
+    <label for="titulo" class="lab-crear">Titulo de la nota: </label>
+    <input type="text" name="campotitulo" value="">
+    <br>
+    <label for="cuerpo" class="lab-crear">Cuerpo de la nota: </label>
+    <input type="text" name="campocuerpo" value="">
+    <br>
+    <br>
+    <input type="submit" value="Crear nota">
+  </form>
+{% endblock %}

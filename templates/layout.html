@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% block head %}
+<head>
+  <meta charset="utf-8">
+  <title>{% block titulo %} {% endblock %}</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+{% endblock %}
+
+{% block body %}
+<body>
+{% block encabezado %}
+  <div class="header-container">
+    <div class="header">
+      <div class="logo">
+        <img src="/static/images/logo.png" width="60px">
+      </div>
+  
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/leernotas">Leer Notas</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="">Account</a></li>
+        </ul>
+      </nav>
+      <img src="/static/images/profile.png" width="30px" height="30px">
+    </div>
+  </div>
+{% endblock %}
+
+<div class="content-container">
+  <div class="mini-container">
+    {% block contenido %}
+    {% endblock %}
+  </div>
+</div>
+
+
+{% block pie %}
+  <div class="footer-container">
+    <div class="footer">
+      <h2>The secret of getting ahead is getting started</h2>
+    </div>
+  </div>
+{% endblock %}
+</body>
+{% endblock %}
+
+</html>

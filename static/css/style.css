@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+nav{
+  flex: 1;
+  text-align: right;
+}
+
+nav ul{
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header-container {
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  background: #79B2EC;
+}
+
+h1 {
+  font-family: Lemon, sans-serif;
+  font-size: 2.7em;
+  line-height: 54px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 10px 0px 16px;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 73%), 0 2px 4px rgb(0 0 0 / 19%);
+  color: lightsalmon;
+}
+
+h3 {
+  font-size: 25px;
+  line-height: 34px;
+  text-shadow: 1px 1px 2px rgb(0 0 0 / 24%), 0 1px 0 rgb(0 0 0 / 25%);
+  margin-top: 0px;
+  margin-bottom: 5px;
+  letter-spacing: 0px;
+  color: lightgreen;
+}
+
+h5 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  color: #93a2cc;
+  line-height: 34px;
+  text-shadow: 1px 1px 2px rgb(0 0 0 / 24%), 0 1px 0 rgb(0 0 0 / 25%);
+  margin-top: 0px;
+  margin-bottom: 5px;
+  letter-spacing: 0px;
+}
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2em;
+  color: lightgreen;
+}
+
+.content-container {
+  height: 100%;
+  padding-top: 146px;
+  padding-bottom: 248px;
+  background-image: url("/static/images/background.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+.lab-crear {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: #93a2cc;
+}
+
+.tabla-notas {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2em;
+}
+
+.text-td {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
+  color: lightgreen;
+  padding-right: 10px;
+}
+
+.link-td {
+  padding-right: 10px;
+}
+
+.link-td a {
+  color: lightseagreen;
+}
+
+.footer-container {
+  background: #79B2EC;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 20px 0 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: block;
+}
+
+.footer-container h2{
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+}
